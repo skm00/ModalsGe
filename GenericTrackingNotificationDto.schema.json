@@ -185,10 +185,7 @@
           ],
           "description": "Phone number of the contact person."
         }
-      },
-      "required": [
-        "name"
-      ]
+      }
     },
     "BookingParty": {
       "type": "object",
@@ -518,12 +515,7 @@
             "$ref": "#/definitions/Party"
           }
         }
-      },
-      "required": [
-        "sender",
-        "receiver",
-        "bookingParty"
-      ]
+      }
     },
     "Party": {
       "type": "object",
@@ -556,10 +548,7 @@
           ],
           "description": "Business role of the party."
         }
-      },
-      "required": [
-        "role"
-      ]
+      }
     },
     "Battery": {
       "type": "object",
@@ -1014,10 +1003,7 @@
           ],
           "description": "Package line type."
         }
-      },
-      "required": [
-        "type"
-      ]
+      }
     },
     "GoodsApiDto": {
       "type": "object",
@@ -1169,15 +1155,7 @@
           ],
           "description": "Download URL for the document."
         }
-      },
-      "required": [
-        "documentId",
-        "documentType",
-        "typeDescription",
-        "fileName",
-        "fileType",
-        "downloadUrl"
-      ]
+      }
     },
     "LocationApiDto": {
       "type": "object",
@@ -1325,10 +1303,7 @@
           ],
           "description": "Verified gross mass cut-off date and time."
         }
-      },
-      "required": [
-        "cancelled"
-      ]
+      }
     },
     "CustomsApiDto": {
       "type": "object",
@@ -1375,10 +1350,7 @@
           ],
           "description": "Removal mode for customs transit."
         }
-      },
-      "required": [
-        "entryNumber"
-      ]
+      }
     },
     "DateTimeRange": {
       "type": "object",
@@ -1405,10 +1377,7 @@
           ],
           "description": "End time."
         }
-      },
-      "required": [
-        "date"
-      ]
+      }
     },
     "DateTimeSection": {
       "type": "object",
@@ -1486,10 +1455,7 @@
           ],
           "description": "Indicates cargo handover by DSV."
         }
-      },
-      "required": [
-        "name"
-      ]
+      }
     },
     "Service": {
       "type": "object",
@@ -1524,11 +1490,7 @@
           "description": "Booked service details.",
           "additionalProperties": true
         }
-      },
-      "required": [
-        "name",
-        "displayName"
-      ]
+      }
     },
     "ServiceLevelDTO": {
       "type": "object",
@@ -1795,12 +1757,7 @@
           ],
           "description": "Previous event date."
         }
-      },
-      "required": [
-        "eventCode",
-        "eventDescription",
-        "newDate"
-      ]
+      }
     },
     "ShipmentDetailsAPI": {
       "type": "object",
@@ -2036,14 +1993,7 @@
             }
           ]
         }
-      },
-      "required": [
-        "childShipmentIds",
-        "product",
-        "dateTime",
-        "events",
-        "proofsOfDelivery"
-      ]
+      }
     },
     "ContainerSummaryDTO": {
       "type": "object",
@@ -2079,10 +2029,5 @@
         }
       }
     }
-  },
-  "required": [
-    "event",
-    "timestamp",
-    "shipmentDetails"
-  ]
+  }
 }
