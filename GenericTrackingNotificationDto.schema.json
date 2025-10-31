@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "GenericTrackingNotification",
+  "description": "Tracking notification payload mirroring GenericTrackingNotificationDto. All members are optional to reflect the nullable DTO fields.",
   "type": "object",
   "additionalProperties": true,
   "properties": {
@@ -423,6 +424,7 @@
     },
     "Parties": {
       "type": "object",
+      "description": "Collection of shipment parties. Each nested party entry is optional; omit it entirely when no data is available.",
       "additionalProperties": false,
       "properties": {
         "sender": {
@@ -1706,6 +1708,7 @@
     },
     "EventDetails": {
       "type": "object",
+      "description": "Optional tracking metadata for a milestone. Fields are nullable and omitted when not supplied.",
       "additionalProperties": true,
       "properties": {
         "isDateCancelled": {
@@ -1761,6 +1764,7 @@
     },
     "ShipmentDetailsAPI": {
       "type": "object",
+      "description": "Snapshot of the shipment at notification time. All members are optional and align with nullable properties on ShipmentDetailsAPI.",
       "additionalProperties": false,
       "properties": {
         "bookingId": {
