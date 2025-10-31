@@ -1107,6 +1107,7 @@
     },
     "DocumentDto": {
       "type": "object",
+      "$comment": "DocumentDto properties are nullable and may be omitted when no file metadata is available.",
       "additionalProperties": false,
       "properties": {
         "documentId": {
@@ -1189,6 +1190,7 @@
     },
     "EventApiDto": {
       "type": "object",
+      "$comment": "Matches EventApiDto where each field (including cancelled) is nullable and optional.",
       "additionalProperties": false,
       "properties": {
         "eventDate": {
@@ -1689,6 +1691,7 @@
     },
     "TypeValueDTO": {
       "type": "object",
+      "$comment": "TypeValueDTO exposes nullable type/value pairs; both members are optional.",
       "additionalProperties": false,
       "properties": {
         "type": {
