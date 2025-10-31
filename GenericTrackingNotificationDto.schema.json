@@ -163,6 +163,7 @@
     },
     "ContactPerson": {
       "type": "object",
+      "description": "Contact person details. The object and all nested members are optional.",
       "additionalProperties": false,
       "properties": {
         "name": {
