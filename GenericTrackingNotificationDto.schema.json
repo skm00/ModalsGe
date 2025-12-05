@@ -17,7 +17,7 @@
         "string",
         "null"
       ],
-      "description": "Timestamp of the notification."
+      "description": "Timestamp of the notification (yyyy-MM-dd'T'HH:mm:ss.SSSZ)."
     },
     "shipmentId": {
       "type": [
@@ -1198,14 +1198,14 @@
             "string",
             "null"
           ],
-          "description": "Date and time when the event took place."
+          "description": "Date and time when the event took place (yyyy-MM-dd'T'HH:mm:ss.SSSZ)."
         },
         "eventLastModified": {
           "type": [
             "string",
             "null"
           ],
-          "description": "Date and time when the event was last modified."
+          "description": "Date and time when the event was last modified (yyyy-MM-dd'T'HH:mm:ss.SSSZ)."
         },
         "eventGroup": {
           "type": [
@@ -1366,21 +1366,21 @@
             "string",
             "null"
           ],
-          "description": "Requested date (YYYY-MM-DD)."
+          "description": "Requested date (yyyy-MM-dd)."
         },
         "start": {
           "type": [
             "string",
             "null"
           ],
-          "description": "Start time."
+          "description": "Start time (HH:mm:ss)."
         },
         "end": {
           "type": [
             "string",
             "null"
           ],
-          "description": "End time."
+          "description": "End time (HH:mm:ss)."
         }
       }
     },
@@ -1755,14 +1755,14 @@
             "string",
             "null"
           ],
-          "description": "New event date."
+          "description": "New event date (yyyy-MM-dd HH:mm)."
         },
         "oldDate": {
           "type": [
             "string",
             "null"
           ],
-          "description": "Previous event date."
+          "description": "Previous event date (yyyy-MM-dd HH:mm)."
         }
       }
     },
@@ -2033,7 +2033,7 @@
             "string",
             "null"
           ],
-          "description": "Slot date."
+          "description": "Slot date (yyyy-MM-dd'T'HH:mm:ss.SSSZ)."
         }
       }
     }
